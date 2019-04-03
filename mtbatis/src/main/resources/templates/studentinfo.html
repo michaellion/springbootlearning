@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <th>UserId</th>
+    <th>姓名</th>
+    <th>Email</th>
+    </thead>
+    <tbody>
+    <tr th:each="entries,stat:${resultList}" th:style="'background-color:'+@{${stat.odd}?'#F2F2F2'}">
+        <td th:text="${stat.count}"></td>
+        <td th:text="${entries['sid']}"></td>
+        <td th:text="${entries['sname']}"></td>
+        <td th:text="${entries['sage']}"></td>
+        <!-- 写法一：
+        <td th:text="${entries['scourse']['cname']}"></td>
+        <td th:text="${entries['scourse']['cscore']}"></td>-->
+        <!-- 写法二：
+        <td th:text="*{entries['scourse']['cname']}"></td>
+        <td th:text="*{entries['scourse']['cscore']}"></td>-->
+        <!-- 写法三：-->
+        <td th:object="${entries['scourse']}">
+            <span th:text="*{['cname']}"></span>
+        </td>
+        <td th:object="${entries['scourse']}">
+            <span th:text="*{['cscore']}"></span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
