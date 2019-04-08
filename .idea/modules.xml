@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/activemq/activemq.iml" filepath="$PROJECT_DIR$/activemq/activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/aop/aop.iml" filepath="$PROJECT_DIR$/aop/aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/java8stream/java8stream.iml" filepath="$PROJECT_DIR$/java8stream/java8stream.iml" />
-      <module fileurl="file://$PROJECT_DIR$/md/md.iml" filepath="$PROJECT_DIR$/md/md.iml" />
       <module fileurl="file://$PROJECT_DIR$/mtbatis/mtbatis.iml" filepath="$PROJECT_DIR$/mtbatis/mtbatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootlearning.iml" filepath="$PROJECT_DIR$/springbootlearning.iml" />

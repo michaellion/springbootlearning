@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/redis/pom.xml" />
         <option value="$PROJECT_DIR$/java8stream/pom.xml" />
         <option value="$PROJECT_DIR$/md/pom.xml" />
+        <option value="$PROJECT_DIR$/activemq/pom.xml" />
       </list>
     </option>
   </component>

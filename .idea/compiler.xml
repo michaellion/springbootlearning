@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="activemq" />
         <module name="aop" />
         <module name="java8stream" />
-        <module name="md" />
         <module name="mtbatis" />
         <module name="redis" />
         <module name="springbootlearning" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activemq" target="1.8" />
       <module name="aop" target="1.8" />
       <module name="java8stream" target="1.8" />
       <module name="md" target="1.8" />
@@ -25,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activemq" options="-parameters" />
       <module name="aop" options="-parameters" />
       <module name="java8stream" options="-parameters" />
       <module name="md" options="-parameters" />
